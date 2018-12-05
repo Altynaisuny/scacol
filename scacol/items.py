@@ -7,8 +7,10 @@
 
 import scrapy
 
-
-class ScacolItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
+class DoubanmovieItem(scrapy.Item):
+    title = scrapy.Field()  # 电影名字
+    movieInfo = scrapy.Field()  # 电影的描述信息，包括导演、主演、电影类型等等
+    star = scrapy.Field()  # 电影评分
+    quote = scrapy.Field()  # 电影中最经典或者说脍炙人口的一句话
     pass
+
